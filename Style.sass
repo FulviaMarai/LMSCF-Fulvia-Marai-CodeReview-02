@@ -42,26 +42,13 @@ main
   padding: 1px 0px 1px 15px
   margin: 1px
 
-#hor3
-  display: flex
-  justify-content: space-between
-
 #hor4
   text-align: center
 
-#hor5
-  display: flex
-  justify-content: center
-
-.ver1
-  width: 85%
-  margin: 10px
-  align-items: stretch
-
 #ver2
   width: 15%
-  float: right
   background-image: url("img/banner-2.png")
+  background-repeat: no-repeat
   background-size: cover
   margin: 10px
 
@@ -71,13 +58,13 @@ main
 
 #ver3
   width: 15%
-  float: right
   background-image: url("img/banner-4.png")
+  background-repeat: no-repeat
   background-size: cover
   margin: 10px
 
 #ver3 img
-  width: 80%
+  width: 100%
   opacity: 0.0
 
 #Bar2
@@ -85,21 +72,14 @@ main
   padding: 1px 0px 1px 15px
   margin: 1px 1px 8px 1px
  
-#Bar1 .news
-  max-width: 25%
-
-#Bar3 .news 
-  max-width: 25%
-
-#Bar4 .news
-  max-width: 50%
+// here there are the notes for the article
 
 .news
   margin: 0px 5px 10px 0px
   background-color: black
 
 .news img
-  height: 200px
+  width: 100%
   object-fit: cover
 
 .news a
@@ -107,11 +87,9 @@ main
   color: white
 
 .news p
-  margin: auto
-  padding: 4px
+  padding: 5px
   text-align: center
   font-size: small
-
 
 
 
@@ -130,13 +108,7 @@ main
       margin: 10px 5px 10px 5px
       max-width: 25%
 
-    .newsB
-      @extend  .news
-      margin: 10px 5px 10px 5px
-      max-width: 40%
-
       */
-
 
 .article p
   text-align: justify
@@ -175,12 +147,7 @@ footer
 #miniNavigator li a:hover 
   text-decoration: underline
 
-#bottom_logo img 
-  float: right
-  overflow: hidden
-
 #fine 
-  align-self: flex-end
   clear: both
   text-align: center
 

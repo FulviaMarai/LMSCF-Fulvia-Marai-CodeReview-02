@@ -3,6 +3,8 @@
 
 @media screen and (max-width: 480px) {
 
+	/* here starts the header for mini screen*/
+
 #banner1 {
 	display: none;
 }
@@ -10,7 +12,7 @@
 	text-align: center;
 }
 
-/* here starts main page */
+	/* here starts main page for mini screen */
 
 #ver1 {
 	width: 100%;
@@ -31,50 +33,50 @@
 	display: none;
 }
 
-#hor3 {
-  display: flex;
-  justify-content: center;
-
-}
-
 #hor4  {
 	display: none;
 }
 
 
-#bar1 {
-	display: flex;
- 	flex-wrap: wrap;
- 	justify-content: center;
+#Bar1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 3px;
 }
 
 #Bar3 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;}
+  justify-content: space-between;
+   border: 3px;
+}
 
 #Bar4 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;}
+  justify-content: space-between;
+   border: 3px;
 }
 
-
-#bannerNew {
-	width: 100%;
+#bannerNew img {
+	max-width: 100%;
+  height: auto;
 }
 
 #Bar1 .news{
-  max-width: 25%;
+  max-width: 40%;
 }
 
 #Bar3 .news {
-  max-width: 50%;
+  max-width: 40%;
 }
 
 #Bar4 .news {
-	max-width: 50%;
+	max-width: 40%;
 }
+
+/* here there are the changes at the articles for mini screen */
 
 .news {
   margin: 0px 5px 10px 0px;
@@ -82,8 +84,7 @@
 }
 
 .news img {
-  height: 200px;
-  object-fit: cover;
+  width: 100%;
 }
 
 .news a {
@@ -93,11 +94,15 @@
   font-size: xx-small;
 }
 
-.news p{
-  max-height: 15px;
+.news p {
+  max-height: 50px;
 }
 
+/* here there is the footer for mini screen */
 
+#bottom_logo {
+text-align: center;
+}
 
 }
 
@@ -110,8 +115,57 @@
 		display: none;
 	}
 
+#hor3{
+  display: flex;
+  justify-content: space-between;}
+
+#hor5{
+  display: flex;
+  justify-content: center;}
+
+.ver1 {
+  width: 85%;
+  margin: 10px;
+  align-items: center;	
+	}
+ 
+#Bar1 {
+  display: flex;
+  justify-content:space-between;
 }
 
+#Bar3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Bar4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#Bar1 .news {
+  max-width: 33%
+}
+
+#Bar3 .news {
+  max-width: 33%
+}
+
+#Bar4 .news {
+  max-width: 45%
+}
+
+/* here is the footer for tablet*/
+
+#bottom_logo {
+text-align: center;
+}
+
+}
+
+/* here will be the media for the bigger screen */
 
 @media screen and (min-width: 801px) {
    
@@ -119,17 +173,52 @@
 	display: none;
 	}
 
+#hor3{
+  display: flex;
+  justify-content: space-between;}
+
+#hor5{
+  display: flex;
+  justify-content: center;}
+
+.ver1 {
+  width: 85%;
+  margin: 10px;
+	align-items: center;	
+	}
+
 #Bar1 {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 
 #Bar3 {
   display: flex;
-  justify-content: space-between;}
+  justify-content: space-between;
+}
 
 #Bar4 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;}
+  justify-content: space-between;
+}
+
+#Bar1 .news {
+  max-width: 33%
+}
+
+#Bar3 .news {
+  max-width: 33%
+}
+
+#Bar4 .news {
+  max-width: 45%
+}
+
+/* here is the footer for bigger screen*/
+
+#bottom_logo img {
+  float: right;
+}
+
 }
