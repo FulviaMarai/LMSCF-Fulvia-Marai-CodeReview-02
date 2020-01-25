@@ -1,6 +1,9 @@
 img {
   max-width: 100%; }
 
+body {
+  font-family: "Chivo", sans-serif; }
+
 #title {
   display: flex;
   justify-content: space-around;
@@ -52,14 +55,19 @@ main {
   align-items: stretch; }
 
 .ver1 {
-  width: 85%; }
+  width: 85%;
+  margin: 10px; }
 
 #ver2 {
   width: 15%;
   float: right;
   background-image: url("img/banner-2.png");
   background-size: cover;
-  overflow: hidden; }
+  margin: 10px; }
+
+#ver2 img {
+  width: 95%;
+  opacity: 0; }
 
 #ver3 {
   width: 15%;
@@ -69,7 +77,11 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden; }
+  margin: 10px; }
+
+#ver3 img {
+  width: 80%;
+  opacity: 0; }
 
 #Bar1 {
   display: flex;
@@ -115,9 +127,13 @@ main {
   text-decoration: none;
   color: white; }
 
-#article img {
+.article p {
+  text-align: justify;
+  margin: 20 px; }
+
+.article img {
   float: left;
-  width: 60%;
+  width: 50%;
   overflow: auto;
   margin: 10px 10px 10px 0px; }
 
