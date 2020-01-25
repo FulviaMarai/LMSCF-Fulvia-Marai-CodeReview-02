@@ -39,14 +39,12 @@ main
 
 #hor2
   background-color: lightgrey
-  padding: 1px
-  padding-left: 10px
+  padding: 1px 0px 1px 15px
   margin: 1px
 
 #hor3
   display: flex
   justify-content: space-between
-  align-items: stretch
 
 #hor4
   text-align: center
@@ -54,11 +52,11 @@ main
 #hor5
   display: flex
   justify-content: center
-  align-items: stretch
 
 .ver1
   width: 85%
   margin: 10px
+  align-items: stretch
 
 #ver2
   width: 15%
@@ -68,7 +66,7 @@ main
   margin: 10px
 
 #ver2 img
-  width: 95%
+  width: 100%
   opacity: 0.0
 
 #ver3
@@ -76,58 +74,69 @@ main
   float: right
   background-image: url("img/banner-4.png")
   background-size: cover
-  background-position: center
-  background-repeat: no-repeat
-  background-size: cover
   margin: 10px
 
 #ver3 img
   width: 80%
   opacity: 0.0
 
-#Bar1
-  display: flex
-  justify-content: space-around
-
 #Bar2
   background-color: lightgrey
-  padding: 1px
-  padding-left: 10px
-  margin: 1px
-  margin-right: 10px
+  padding: 1px 0px 1px 15px
+  margin: 1px 1px 8px 1px
+ 
+#Bar1 .news
+  max-width: 25%
 
-#Bar3
-  display: flex
-  justify-content: space-around
+#Bar3 .news 
+  max-width: 25%
 
-#Bar4
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-around
+#Bar4 .news
+  max-width: 50%
 
 .news
+  margin: 0px 5px 10px 0px
   background-color: black
-  color: white
-  text-align: center
-  font-size: small
-  margin: 10px 5px 10px 5px
-  max-width: 25%
+
+.news img
+  height: 200px
+  object-fit: cover
 
 .news a
   text-decoration: none
   color: white
 
-.newsB
-  background-color: black
-  color: white
+.news p
+  margin: auto
+  padding: 4px
   text-align: center
   font-size: small
-  margin: 10px 5px 10px 5px
-  max-width: 40%
 
-.newsB a
-  text-decoration: none
-  color: white
+
+
+
+/* i tried do keep sass DRY using extend, but didn't work, 
+  i have no time to try to correct it
+
+    .news 
+      background-color: black
+      text-decoration: none
+      color: white
+      text-align: center
+      font-size: x-small
+
+    .news
+      @extend .news
+      margin: 10px 5px 10px 5px
+      max-width: 25%
+
+    .newsB
+      @extend  .news
+      margin: 10px 5px 10px 5px
+      max-width: 40%
+
+      */
+
 
 .article p
   text-align: justify
@@ -174,3 +183,12 @@ footer
   align-self: flex-end
   clear: both
   text-align: center
+
+// every time i tried to put Media Queries on sass 
+// didn't work or worked partially. I have decided to create a new css
+// called "media.css".
+
+
+
+
+
